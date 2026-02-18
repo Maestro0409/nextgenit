@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen IT Solutions - Cosmic Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Rajdhani:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #050510;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Global Background Elements (Persist across slides) -->
+    <div class="global-bg">
+        <video id="video-0" autoplay muted loop playsinline class="bg-video active">
+            <source src="A_cinematic_ultrarealistic_1080p_20260218133.mp4" type="video/mp4">
+        </video>
+        <video id="video-1" autoplay muted loop playsinline class="bg-video">
+            <source src="Imagine_something_cool_1080p_202602181345.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <div class="slider-container">
+
+        <!-- Navigation -->
+        <nav class="slider-nav">
+            <div class="logo">NEXGEN<span class="highlight">IT</span></div>
+            <div class="nav-links">
+                <div class="nav-item active" data-slide="0" data-i18n="nav_home">HOME</div>
+                <div class="nav-item" data-slide="1" data-i18n="nav_services">SERVICES</div>
+                <div class="nav-item" data-slide="2" data-i18n="nav_cloud">CLOUD</div>
+                <div class="nav-item" data-slide="3" data-i18n="nav_security">SECURITY</div>
+            </div>
+            <div class="lang-switch">
+                <span class="lang-opt active" id="lang-en">EN</span> | <span class="lang-opt" id="lang-ru">RU</span>
+            </div>
+            <a href="#" class="btn-quote" data-i18n="btn_quote">GET QUOTE</a>
+        </nav>
+
+        <!-- Social Sidebar -->
+        <div class="social-sidebar">
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <div class="social-line"></div>
+        </div>
+
+        <div class="scroll-indicator" onclick="window.scrollTo({top: window.innerHeight, behavior: 'smooth'})">
+            <span>SCROLL DOWN</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+
+        <!-- Slide 1: Hero -->
+        <div class="slide active" id="slide-0">
+            <div class="content-wrapper parallax" data-speed="0.02">
+                <h2 class="subtitle reveal-text" data-i18n="hero_subtitle">DIGITAL EVOLUTION</h2>
+                <h1 class="title reveal-text" style="animation-delay: 0.2s" data-i18n="hero_title">NEXT GEN<br><span
+                        class="text-neon-blue">WEB
+                        & AI</span></h1>
+                <p class="description reveal-text" style="animation-delay: 0.4s" data-i18n="hero_desc">Premium websites,
+                    intelligent
+                    automation, and custom CRM solutions. We build the future of your business.</p>
+                <a href="#" class="btn-neon reveal-text" style="animation-delay: 0.6s" data-i18n="hero_cta">LAUNCH
+                    MISSION</a>
+            </div>
+        </div>
+
+        <!-- Slide 2: Development -->
+        <div class="slide" id="slide-1">
+            <div class="content-wrapper parallax" data-speed="0.02">
+                <h2 class="subtitle">BUILDING WORLDS</h2>
+                <h1 class="title">CUSTOM<br><span class="text-neon-purple">DEVELOPMENT</span></h1>
+                <p class="description">Architecting robust software ecosystems that defy gravity.</p>
+                <a href="#" class="btn btn-neon">VIEW BLUEPRINTS</a>
+            </div>
+        </div>
+
+        <!-- Slide 3: Cloud -->
+        <div class="slide" id="slide-2">
+            <div class="content-wrapper parallax" data-speed="0.02">
+                <h2 class="subtitle">BEYOND THE SKY</h2>
+                <h1 class="title">CLOUD<br><span class="text-neon-cyan">INFRASTRUCTURE</span></h1>
+                <p class="description">Scalable solutions that grow with your ambition. Secure, fast, and limitless.</p>
+                <a href="#" class="btn btn-neon">MIGRATE UP</a>
+            </div>
+        </div>
+
+        <!-- Slide 4: Security -->
+        <div class="slide" id="slide-3">
+            <div class="content-wrapper parallax" data-speed="0.02">
+                <h2 class="subtitle">ZERO GRAVITY DEFENSE</h2>
+                <h1 class="title">CYBER<br><span class="text-neon-pink">SECURITY</span></h1>
+                <p class="description">Ironclad protection for your digital assets against any threat in the galaxy.</p>
+                <a href="#" class="btn btn-neon">ENGAGE SHIELDS</a>
+            </div>
+        </div>
+
+    </div><!-- End slider-container -->
+
+    <!-- Scrolling Content -->
+    <section id="services" class="content-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services_title">OUR <span class="text-neon-blue">EXPERTISE</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-layer-group"></i></div>
+                    <h3 data-i18n="srv_web_title">PREMIUM WEB</h3>
+                    <p data-i18n="srv_web_desc">High-performance websites with stunning visuals. We combine aesthetics
+                        with robust functionality
+                        to captivate your audience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-chart-network"></i></div>
+                    <h3 data-i18n="srv_crm_title">CUSTOM CRM</h3>
+                    <p data-i18n="srv_crm_desc">Tailored CRM systems to manage your clients and sales pipeline. Automate
+                        your business logic and
+                        save time.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon"><i class="fab fa-telegram-plane"></i></div>
+                    <h3 data-i18n="srv_bot_title">TELEGRAM BOTS</h3>
+                    <p data-i18n="srv_bot_desc">Interactive bots for support, sales, and community management. Automate
+                        interactions directly in
+                        your messenger.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-brain"></i></div>
+                    <h3 data-i18n="srv_ai_title">AI AUTOMATION</h3>
+                    <p data-i18n="srv_ai_desc">Integrate LLMs and smart agents into your workflow. From content
+                        generation to intelligent data
+                        analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="content-section about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">WHY <span class="text-neon-purple">CHOOSE US</span></h2>
+                <p>We are a collective of digital architects, engineers, and creatives dedicated to pushing the
+                    boundaries of what's possible on the web. Our mission is to accelerate your digital
+                    transformation through innovative technology and stunning design.</p>
+                <div class="tech-stack-row">
+                    <span><i class="fab fa-react"></i></span>
+                    <span><i class="fab fa-node-js"></i></span>
+                    <span><i class="fab fa-python"></i></span>
+                    <span><i class="fab fa-aws"></i></span>
+                    <span><i class="fab fa-docker"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info-slider" class="content-section info-slider-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="recent_work_title">RECENT <span class="text-neon-pink">WORK</span></h2>
+
+            <div class="slider-wrapper">
+                <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+
+                <div class="info-slider-container">
+                    <div class="info-track">
+                        <!-- Card 1 -->
+                        <div class="info-card">
+                            <div class="card-image" style="background-image: url('assets/images/s1-thumb.jpg');"></div>
+                            <div class="card-content">
+                                <span class="date">STARDATE 2026.42</span>
+                                <h3>PROJECT: NEBULA</h3>
+                                <p>deployed a decentralized cloud infrastructure for a Fortune 500 fintech giant,
+                                    reducing latency by 40%.</p>
+                                <a href="#" class="read-more">ACCESS DATA ></a>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="info-card">
+                            <div class="card-image" style="background-image: url('assets/images/s2-thumb.jpg');"></div>
+                            <div class="card-content">
+                                <span class="date">STARDATE 2026.38</span>
+                                <h3>OP: QUANTUM SHIELD</h3>
+                                <p>Integrated AI-driven threat detection systems, securing petabytes of sensitive
+                                    government data.</p>
+                                <a href="#" class="read-more">ACCESS DATA ></a>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="info-card">
+                            <div class="card-image" style="background-image: url('assets/images/s3-thumb.jpg');"></div>
+                            <div class="card-content">
+                                <span class="date">STARDATE 2026.15</span>
+                                <h3>APP: HYPERDRIVE</h3>
+                                <p>Launched a cross-platform mobile application that revolutionized logistics tracking
+                                    in real-time.</p>
+                                <a href="#" class="read-more">ACCESS DATA ></a>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="info-card">
+                            <div class="card-image" style="background-image: url('assets/images/s4-thumb.jpg');"></div>
+                            <div class="card-content">
+                                <span class="date">STARDATE 2025.98</span>
+                                <h3>SYS: CORE UPGRADE</h3>
+                                <p>Complete legacy system overhaul for a global retail chain, boosting efficiency by
+                                    300%.</p>
+                                <a href="#" class="read-more">ACCESS DATA ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>NEXGEN<span class="highlight">IT</span></h3>
+                <p>&copy; 2026 NexGen IT Solutions. All rights reserved.</p>
+            </div>
+            <div class="footer-col links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title" data-i18n="modal_title">INITIATE <span class="text-neon-blue">CONTACT</span></h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label data-i18n="lbl_name">IDENTIFIER (NAME)</label>
+                    <input type="text" placeholder="John Doe" id="contactName">
+                </div>
+                <div class="form-group">
+                    <label data-i18n="lbl_email">COMMUNICATION CHANNEL (EMAIL)</label>
+                    <input type="email" placeholder="john@example.com" id="contactEmail">
+                </div>
+                <div class="form-group">
+                    <label data-i18n="lbl_objective">OBJECTIVE</label>
+                    <select>
+                        <option>General Inquiry</option>
+                        <option>App Development</option>
+                        <option>Cloud Migration</option>
+                        <option>Security Audit</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-neon" style="width: 100%; margin-top: 20px;"
+                    data-i18n="btn_transmit">TRANSMIT DATA</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- WALL-E Chatbot Widget -->
+    <div class="walle-widget">
+        <div class="chat-window" id="walleChatWindow">
+            <div class="chat-header">
+                <div class="bot-avatar" style="overflow: hidden; padding: 0;">
+                    <img src="Image_202602181421.jpeg" alt="WALL-E"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="bot-info">
+                    <h3>WALL-E</h3>
+                    <span class="status-indicator">ONLINE</span>
+                </div>
+                <button class="close-chat" id="closeChatBtn">&times;</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    Hello! I am WALL-E. How can I assist you with our services today?
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Type a message...">
+                <button id="sendMessageBtn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button class="walle-btn" id="walleBtn">
+            <i class="fas fa-robot"></i>
+            <span class="notification-dot"></span>
+        </button>
+    </div>
+
+    <!-- GSAP via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
